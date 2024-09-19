@@ -1,0 +1,82 @@
+body {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  background-color: var(--bg);
+  color: var(--fontColor);
+}
+
+.container {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 20px;
+  background-color: #35151544; 
+  border-radius: 100px;
+  width: 400px;
+  height: 350px;
+}
+
+.iniciar {
+  background-color: green;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+}
+
+.pausar {
+  background-color: rgb(104, 104, 17);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+}
+
+.pausado {
+  color: red;
+}
+
+.zerar {
+  background-color: red;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.938);
+  padding: 10px 20px;
+}
+
+#relogio {
+  font-size: 35px;
+}
+
+.light-theme {
+  --bg: #00FF00;
+  --fontColor: #000000;
+  --btnBg: #000000;
+  --btnFontColor: #ffffff;
+}
+
+.dark-theme {
+  --bg: #000000;
+  --fontColor: #00FF00;
+  --btnBg: #ffffff;
+  --btnFontColor: #000000;
+}
+
+.btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: none;
+  color: var(--btnFontColor);
+  background-color: var(--btnBg);
+  cursor: pointer;
+}
